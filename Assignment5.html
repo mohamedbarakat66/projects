@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Restaurant Menu</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="hero">
+
+        <div class="hero-icon">
+            <i class="fa-solid fa-utensils"></i>
+        </div>
+
+        <p class="subtitle">WELCOME TO OUR RESTAURANT</p>
+
+        <h1>Our Delicious Menu</h1>
+
+        <p class="description">
+            Fresh flavors, delicious dishes, and unforgettable moments.
+        </p>
+
+    </header>
+
+
+    <div class="btns">
+
+        <button class="btn active" data-category="all">
+            <i class="fa-solid fa-border-all"></i>
+            All
+        </button>
+
+        <button class="btn" data-category="breakfast">
+            <i class="fa-solid fa-egg"></i>
+            Breakfast
+        </button>
+
+        <button class="btn" data-category="lunch">
+            <i class="fa-solid fa-burger"></i>
+            Lunch
+        </button>
+
+        <button class="btn" data-category="drinks">
+            <i class="fa-solid fa-mug-hot"></i>
+            Drinks
+        </button>
+
+    </div>
+
+
+    <div class="menu-container" id="menuContainer"></div>
+
+
+    <script src="scriptt.js"></script>
+
+</body>
+</html>
