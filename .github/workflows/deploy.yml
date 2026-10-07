@@ -1,4 +1,3 @@
-```yaml
 name: Deploy Projects
 
 on:
@@ -30,7 +29,6 @@ jobs:
         run: |
           mkdir -p site/restaurant-menu
           mkdir -p site/dnk-store
-
           cp -r "Restaurant Menu"/. site/restaurant-menu/
           cp -r "DNK Store"/. site/dnk-store/
 
@@ -42,4 +40,3 @@ jobs:
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
-```
