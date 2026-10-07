@@ -1,4 +1,4 @@
-name: Deploy Projects
+name: Deploy Restaurant Menu
 
 on:
   push:
@@ -25,17 +25,10 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      - name: Prepare site
-        run: |
-          mkdir -p site/restaurant-menu
-          mkdir -p site/dnk-store
-          cp -r "Restaurant Menu"/. site/restaurant-menu/
-          cp -r "DNK Store"/. site/dnk-store/
-
       - name: Upload site
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./site
+          path: ./Restaurant Menu
 
       - name: Deploy
         id: deployment
